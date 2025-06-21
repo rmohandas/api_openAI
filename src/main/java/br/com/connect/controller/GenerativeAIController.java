@@ -10,7 +10,6 @@ public class GenerativeAIController {
 
     private final ChatService chatService;
 
-
     public GenerativeAIController(ChatService chatService) {
         this.chatService = chatService;
     }
