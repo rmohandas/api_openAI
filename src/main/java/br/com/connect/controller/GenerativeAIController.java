@@ -19,4 +19,9 @@ public class GenerativeAIController {
     public String getResponse(@RequestParam String prompt) {
         return chatService.getResponse(prompt);
     }
+
+    @GetMapping("ask-ai-options")
+    public String getResponseWithOptions(@RequestParam String prompt) {
+        return chatService.getResponseWithOptions(prompt);
+    }
 }
