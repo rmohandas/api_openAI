@@ -28,7 +28,7 @@ public class GenerativeAIController {
     public String getResponseWithOptions(@RequestParam String prompt) {
         return chatService.getResponseWithOptions(prompt);
     }
-    
+
     @PostMapping("recipe-creator")
     public String recipeCreator(@RequestParam String ingredients,
                                 @RequestParam(defaultValue = "any") String cuisine,
